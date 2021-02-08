@@ -1,0 +1,16 @@
+name: Check Updater MRAs
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install and check MRAs
+      run: ./install_and_check_mras.sh
