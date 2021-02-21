@@ -15,9 +15,8 @@ rm update.sh
 echo
 echo "Running MRA Checker"
 
-wget https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/master/other_authors/mra_rom_check.sh
-chmod +x mra_rom_check.sh
-./mra_rom_check.sh --recursive --ignore-roms --mra-folder "delme/_Arcade/_alternatives"
+curl --fail --location https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/master/other_authors/mra_rom_check.sh | bash -s \
+  --recursive --ignore-roms --mra-folder "delme/_Arcade"
 
 echo
 echo "All MRAs are good!"
