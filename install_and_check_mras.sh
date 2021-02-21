@@ -15,7 +15,9 @@ rm update.sh
 echo
 echo "Running MRA Checker"
 
-./mra_checker.py --ignore-roms --mra-folder "delme/_Arcade"
+wget https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/master/other_authors/mra_rom_check.sh
+chmod +x mra_rom_check.sh
+./mra_rom_check.sh --ignore-roms --mra-folder "delme/_Arcade/_alternatives"
 
 echo
 echo "All MRAs are good!"
