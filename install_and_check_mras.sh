@@ -17,7 +17,7 @@ echo "Running MRA Checker"
 
 wget https://raw.githubusercontent.com/MiSTer-devel/Scripts_MiSTer/master/other_authors/mra_rom_check.sh
 chmod +x mra_rom_check.sh
-./mra_rom_check.sh --ignore-roms --mra-folder "delme/_Arcade/_alternatives"
+./mra_rom_check.sh --recursive --ignore-roms --mra-folder "delme/_Arcade/_alternatives"
 
 echo
 echo "All MRAs are good!"
