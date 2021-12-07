@@ -4,7 +4,7 @@ set -euo pipefail
 echo "Running MiSTer Downloader"
 echo
 
-DOWNLOADER_URL=${DOWNLOADER_URL:-"https://raw.githubusercontent.com/MiSTer-devel/Downloader_MiSTer/main/dont_download.sh"}
+DOWNLOADER_URL=${DOWNLOADER_URL:-"https://raw.githubusercontent.com/MiSTer-devel/Downloader_MiSTer/main/downloader.sh"}
 
 curl --fail --location "${DOWNLOADER_URL}" > downloader.sh
 chmod +x downloader.sh
