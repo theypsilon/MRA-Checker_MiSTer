@@ -9,6 +9,7 @@ DOWNLOADER_URL=${DOWNLOADER_URL:-"https://raw.githubusercontent.com/MiSTer-devel
 curl --fail --location "${DOWNLOADER_URL}" > downloader.sh
 chmod +x downloader.sh
 
+export DEBUG=true
 ./downloader.sh
 rm downloader.sh
 
