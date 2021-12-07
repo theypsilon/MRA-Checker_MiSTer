@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
+    - name: Install sharutils
+      run: sudo apt-get install sharutils
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.5'
+
     - uses: actions/checkout@v2
 
     - name: Install and check MRAs
